@@ -92,4 +92,8 @@ monitoring-app/
 - Плавные переходы для плавности взаимодействия
 - Иконки вместо текста для экономии пространства
 
+Ссылка на призентацию в Figma:
 https://www.figma.com/proto/CJxDbeG68kIjwX3c25QhT7/qt-%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5?page-id=0%3A1&node-id=11-11&viewport=-975%2C236%2C0.65&t=N0CfkmRKedUz8FwC-1&scaling=contain&content-scaling=fixed
+
+Портфолио с работами в других графических редакторах:
+https://www.behance.net/Rajink_Project
