@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>863</width>
+    <height>508</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #2E3440;
+    color: #ECEFF4;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget#centralwidget {
+    background-color: transparent;
+    padding: 8px;
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QWidget" name="widget_1" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget#sport,
+QWidget#widget_2,
+QWidget#widget_3 {
+    background-color: #3B4252;
+    border-radius: 8px;
+    margin: 4px;
+}</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="play">
+         <property name="minimumSize">
+          <size>
+           <width>72</width>
+           <height>72</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">/* Базовый стиль кнопки */
+QPushButton {
+    /* Фон и форма */
+    background-color: #0078D7;
+    border-radius: 15px;
+    border: none;
+    
+    /* Отступы (регулируйте под размер иконки) */
+    min-width: 48px;
+    min-height: 48px;
+    padding: 12px;
+    
+    /* Ключевой параметр: цвет ИКОНКИ через цвет текста */
+    color: white;
+    
+    /* Плавные переходы */
+    qproperty-iconSize: 42px;
+    transition: all 0.2s ease;
+}
+
+/* Состояние при наведении */
+QPushButton:hover {
+    background-color: #5E81AC;
+    color: #2E3440; /* Автоматически меняет цвет ИКОНКИ */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Состояние при нажатии */
+QPushButton:pressed {
+    background-color: #8FBCBB;
+    color: #2E3440;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Для отключенного состояния */
+QPushButton:disabled {
+    background-color: #4C566A;
+    color: #A5ABB6;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>resources/play.png</normaloff>resources/play.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>42</width>
+           <height>42</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="stop">
+         <property name="minimumSize">
+          <size>
+           <width>72</width>
+           <height>72</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">/* Базовый стиль кнопки */
+QPushButton {
+    /* Фон и форма */
+    background-color: #0078D7;
+    border-radius: 15px;
+    border: none;
+    
+    /* Отступы (регулируйте под размер иконки) */
+    min-width: 48px;
+    min-height: 48px;
+    padding: 12px;
+    
+    /* Ключевой параметр: цвет ИКОНКИ через цвет текста */
+    color: white;
+    
+    /* Плавные переходы */
+    qproperty-iconSize: 42px;
+    transition: all 0.2s ease;
+}
+
+/* Состояние при наведении */
+QPushButton:hover {
+    background-color: #5E81AC;
+    color: #2E3440; /* Автоматически меняет цвет ИКОНКИ */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Состояние при нажатии */
+QPushButton:pressed {
+    background-color: #8FBCBB;
+    color: #2E3440;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Для отключенного состояния */
+QPushButton:disabled {
+    background-color: #4C566A;
+    color: #A5ABB6;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>resources/stop.png</normaloff>resources/stop.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>42</width>
+           <height>42</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="settings">
+         <property name="minimumSize">
+          <size>
+           <width>72</width>
+           <height>72</height>
+          </size>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">/* Базовый стиль кнопки */
+QPushButton {
+    /* Фон и форма */
+    background-color: #0078D7;
+    border-radius: 15px;
+    border: none;
+    
+    /* Отступы (регулируйте под размер иконки) */
+    min-width: 48px;
+    min-height: 48px;
+    padding: 12px;
+    
+    /* Ключевой параметр: цвет ИКОНКИ через цвет текста */
+    color: white;
+    
+    /* Плавные переходы */
+    qproperty-iconSize: 42px;
+    transition: all 0.2s ease;
+}
+
+/* Состояние при наведении */
+QPushButton:hover {
+    background-color: #5E81AC;
+    color: #2E3440; /* Автоматически меняет цвет ИКОНКИ */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Состояние при нажатии */
+QPushButton:pressed {
+    background-color: #8FBCBB;
+    color: #2E3440;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Для отключенного состояния */
+QPushButton:disabled {
+    background-color: #4C566A;
+    color: #A5ABB6;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>resources/settings.png</normaloff>resources/settings.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>42</width>
+           <height>42</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget#sport,
+QWidget#widget_2,
+QWidget#widget_3 {
+    background-color: #3B4252;
+    border-radius: 8px;
+    margin: 4px;
+}</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QWidget" name="widget_4" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="videoLayout">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="tabletTracking">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTextEdit#videoLayout {
+    background-color: #4C566A;
+    color: #ECEFF4;
+    border: 1px solid #3B4252;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 10pt;
+}</string>
+            </property>
+            <property name="midLineWidth">
+             <number>18</number>
+            </property>
+            <property name="text">
+             <string>Видеопоток отключен</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="listWidget">
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">/* Основной стиль списка */
+QListWidget {
+    background-color: #252526;
+    border: 1px solid #3C3C3C;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 12pt;
+    color: #D4D4D4;
+    outline: none;
+}
+
+/* Стиль элементов списка */
+QListWidget::item {
+    background-color: #2D2D30;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin: 4px 0;
+    border: none;
+}
+
+/* Стиль при наведении */
+QListWidget::item:hover {
+    background-color: #3E3E42;
+    border-left: 3px solid #007ACC;
+}
+
+/* Стиль выбранного элемента */
+QListWidget::item:selected {
+    background-color: #094771;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* Стиль при нажатии */
+QListWidget::item:pressed {
+    background-color: #005499;
+}
+
+/* Полоса прокрутки */
+QScrollBar:vertical {
+    border: none;
+    background: #1E1E1E;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #3C3C3C;
+    min-height: 20px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #505050;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>👥Люди (5)</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>🐈 Животные (2)</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>🚗Машины (3)</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>🌳 Деревья (9)</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget#sport,
+QWidget#widget_2,
+QWidget#widget_3 {
+    background-color: #3B4252;
+    border-radius: 8px;
+    margin: 4px;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QTextBrowser" name="textBrowser">
+         <property name="styleSheet">
+          <string notr="true">/* Панель вывода текста */
+QTextBrowser#textBrowser {
+    background-color: #4C566A;
+    color: #ECEFF4;
+    border: 1px solid #3B4252;
+    border-radius: 6px;
+    padding: 8px;
+    font-family: &quot;Consolas&quot;, monospace;
+    font-size: 10pt;
+}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
